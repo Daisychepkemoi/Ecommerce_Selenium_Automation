@@ -18,4 +18,5 @@ Steps
 
 Sample Report :
 
-![Alt text](/relative/path/to/Screenshot_1.png?raw=true "Sample Report")
+![Alt text](/Screenshot_1.png?raw=true "Sample Report")
+
