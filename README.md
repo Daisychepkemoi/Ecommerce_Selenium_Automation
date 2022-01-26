@@ -18,5 +18,4 @@ Steps
 
 Sample Report :
 
-![Alt text](/relative/path/to/Screenshot_1.png?raw=true "Sample Report")"# Ecommerce_Selenium_Automation" 
-"# Ecommerce_Selenium_Automation" 
+![Alt text](/relative/path/to/Screenshot_1.png?raw=true "Sample Report")
