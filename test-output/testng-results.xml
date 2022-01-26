@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-25T22:13:07 EAT" name="Suite" finished-at="2022-01-25T22:13:23 EAT" duration-ms="15309">
+  <suite started-at="2022-01-26T22:01:19 EAT" name="Suite" finished-at="2022-01-26T22:01:58 EAT" duration-ms="39019">
     <groups>
     </groups>
-    <test started-at="2022-01-25T22:13:07 EAT" name="suite" finished-at="2022-01-25T22:13:23 EAT" duration-ms="15309">
+    <test started-at="2022-01-26T22:01:19 EAT" name="suite" finished-at="2022-01-26T22:01:58 EAT" duration-ms="39019">
       <class name="stepDefinitions.Checkout">
-        <test-method signature="proceedtoCheckOutPage()[pri:0, instance:stepDefinitions.Checkout@1849db1a]" started-at="2022-01-25T22:13:21 EAT" name="proceedtoCheckOutPage" finished-at="2022-01-25T22:13:22 EAT" duration-ms="830" status="PASS">
+        <test-method signature="proceedtoCheckOutPage()[pri:0, instance:stepDefinitions.Checkout@5fcacc0]" started-at="2022-01-26T22:01:54 EAT" name="proceedtoCheckOutPage" finished-at="2022-01-26T22:01:55 EAT" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedtoCheckOutPage -->
-        <test-method signature="placeOrder()[pri:1, instance:stepDefinitions.Checkout@1849db1a]" started-at="2022-01-25T22:13:22 EAT" name="placeOrder" finished-at="2022-01-25T22:13:22 EAT" duration-ms="120" status="PASS">
+        <test-method signature="placeOrder()[pri:1, instance:stepDefinitions.Checkout@5fcacc0]" started-at="2022-01-26T22:01:55 EAT" name="placeOrder" finished-at="2022-01-26T22:01:55 EAT" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method signature="acceptTermsAndConditions()[pri:2, instance:stepDefinitions.Checkout@1849db1a]" started-at="2022-01-25T22:13:22 EAT" name="acceptTermsAndConditions" finished-at="2022-01-25T22:13:23 EAT" duration-ms="644" status="PASS">
+        <test-method signature="acceptTermsAndConditionsNegative()[pri:2, instance:stepDefinitions.Checkout@5fcacc0]" started-at="2022-01-26T22:01:55 EAT" name="acceptTermsAndConditionsNegative" finished-at="2022-01-26T22:01:57 EAT" duration-ms="1546" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acceptTermsAndConditions -->
+        </test-method> <!-- acceptTermsAndConditionsNegative -->
+        <test-method signature="acceptTermsAndConditionsPositive()[pri:3, instance:stepDefinitions.Checkout@5fcacc0]" started-at="2022-01-26T22:01:57 EAT" name="acceptTermsAndConditionsPositive" finished-at="2022-01-26T22:01:58 EAT" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptTermsAndConditionsPositive -->
       </class> <!-- stepDefinitions.Checkout -->
       <class name="stepDefinitions.LoadHomePage">
-        <test-method signature="LoadBaseUrl()[pri:0, instance:stepDefinitions.LoadHomePage@5ac86ba5]" started-at="2022-01-25T22:13:07 EAT" name="LoadBaseUrl" finished-at="2022-01-25T22:13:20 EAT" duration-ms="12743" status="PASS">
+        <test-method signature="LoadBaseUrl()[pri:0, instance:stepDefinitions.LoadHomePage@191ae03f]" started-at="2022-01-26T22:01:19 EAT" name="LoadBaseUrl" finished-at="2022-01-26T22:01:53 EAT" duration-ms="34114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoadBaseUrl -->
       </class> <!-- stepDefinitions.LoadHomePage -->
       <class name="stepDefinitions.AddtoCart">
-        <test-method signature="reduceitemsOnCartToZero()[pri:0, instance:stepDefinitions.AddtoCart@3e2822]" started-at="2022-01-25T22:13:20 EAT" name="reduceitemsOnCartToZero" finished-at="2022-01-25T22:13:20 EAT" duration-ms="194" status="PASS">
+        <test-method signature="reduceitemsOnCartToZero()[pri:0, instance:stepDefinitions.AddtoCart@1849db1a]" started-at="2022-01-26T22:01:53 EAT" name="reduceitemsOnCartToZero" finished-at="2022-01-26T22:01:53 EAT" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reduceitemsOnCartToZero -->
-        <test-method signature="AddItemsToCartViaClick()[pri:1, instance:stepDefinitions.AddtoCart@3e2822]" started-at="2022-01-25T22:13:20 EAT" name="AddItemsToCartViaClick" finished-at="2022-01-25T22:13:21 EAT" duration-ms="138" status="PASS">
+        <test-method signature="AddItemsToCartViaClick()[pri:1, instance:stepDefinitions.AddtoCart@1849db1a]" started-at="2022-01-26T22:01:53 EAT" name="AddItemsToCartViaClick" finished-at="2022-01-26T22:01:53 EAT" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItemsToCartViaClick -->
-        <test-method signature="AddItemsToCartviaInput()[pri:2, instance:stepDefinitions.AddtoCart@3e2822]" started-at="2022-01-25T22:13:21 EAT" name="AddItemsToCartviaInput" finished-at="2022-01-25T22:13:21 EAT" duration-ms="200" status="PASS">
+        <test-method signature="AddItemsToCartviaInput()[pri:2, instance:stepDefinitions.AddtoCart@1849db1a]" started-at="2022-01-26T22:01:53 EAT" name="AddItemsToCartviaInput" finished-at="2022-01-26T22:01:54 EAT" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItemsToCartviaInput -->
-        <test-method signature="clickAddToCart()[pri:3, instance:stepDefinitions.AddtoCart@3e2822]" started-at="2022-01-25T22:13:21 EAT" name="clickAddToCart" finished-at="2022-01-25T22:13:21 EAT" duration-ms="364" status="PASS">
+        <test-method signature="clickAddToCart()[pri:3, instance:stepDefinitions.AddtoCart@1849db1a]" started-at="2022-01-26T22:01:54 EAT" name="clickAddToCart" finished-at="2022-01-26T22:01:54 EAT" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAddToCart -->

@@ -3,11 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="suite(failed)">
     <classes>
+      <class name="stepDefinitions.LoadHomePage">
+        <methods>
+          <include name="LoadBaseUrl"/>
+        </methods>
+      </class> <!-- stepDefinitions.LoadHomePage -->
       <class name="stepDefinitions.Checkout">
         <methods>
-          <include name="acceptTermsAndConditions"/>
+          <include name="proceedtoCheckOutPage"/>
+          <include name="placeOrder"/>
+          <include name="acceptTermsAndConditionsPositive"/>
+          <include name="acceptTermsAndConditionsNegative"/>
         </methods>
       </class> <!-- stepDefinitions.Checkout -->
+      <class name="stepDefinitions.AddtoCart">
+        <methods>
+          <include name="AddItemsToCartViaClick"/>
+          <include name="reduceitemsOnCartToZero"/>
+          <include name="clickAddToCart"/>
+          <include name="AddItemsToCartviaInput"/>
+        </methods>
+      </class> <!-- stepDefinitions.AddtoCart -->
     </classes>
   </test> <!-- suite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

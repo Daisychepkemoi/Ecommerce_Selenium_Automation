@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,7 +119,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="stepDefinitions.Checkout" class="method navigator-link" hash-for-method="acceptTermsAndConditions">acceptTermsAndConditions</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="stepDefinitions.Checkout" class="method navigator-link" hash-for-method="acceptTermsAndConditionsNegative">acceptTermsAndConditionsNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="stepDefinitions.Checkout" class="method navigator-link" hash-for-method="acceptTermsAndConditionsPositive">acceptTermsAndConditionsPositive</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -177,9 +182,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="acceptTermsAndConditions">
-                  </a> <!-- acceptTermsAndConditions -->
-                  <span class="method-name">acceptTermsAndConditions</span>
+                  <a name="acceptTermsAndConditionsNegative">
+                  </a> <!-- acceptTermsAndConditionsNegative -->
+                  <span class="method-name">acceptTermsAndConditionsNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptTermsAndConditionsPositive">
+                  </a> <!-- acceptTermsAndConditionsPositive -->
+                  <span class="method-name">acceptTermsAndConditionsPositive</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -288,44 +300,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoadBaseUrl')
 data.setCell(0, 2, 'stepDefinitions.LoadHomePage')
-data.setCell(0, 3, 12743);
+data.setCell(0, 3, 34114);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'proceedtoCheckOutPage')
+data.setCell(1, 1, 'acceptTermsAndConditionsNegative')
 data.setCell(1, 2, 'stepDefinitions.Checkout')
-data.setCell(1, 3, 830);
+data.setCell(1, 3, 1546);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'acceptTermsAndConditions')
+data.setCell(2, 1, 'proceedtoCheckOutPage')
 data.setCell(2, 2, 'stepDefinitions.Checkout')
-data.setCell(2, 3, 644);
+data.setCell(2, 3, 1022);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickAddToCart')
-data.setCell(3, 2, 'stepDefinitions.AddtoCart')
-data.setCell(3, 3, 364);
+data.setCell(3, 1, 'acceptTermsAndConditionsPositive')
+data.setCell(3, 2, 'stepDefinitions.Checkout')
+data.setCell(3, 3, 788);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'AddItemsToCartviaInput')
+data.setCell(4, 1, 'clickAddToCart')
 data.setCell(4, 2, 'stepDefinitions.AddtoCart')
-data.setCell(4, 3, 200);
+data.setCell(4, 3, 546);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'reduceitemsOnCartToZero')
 data.setCell(5, 2, 'stepDefinitions.AddtoCart')
-data.setCell(5, 3, 194);
+data.setCell(5, 3, 280);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'AddItemsToCartViaClick')
+data.setCell(6, 1, 'AddItemsToCartviaInput')
 data.setCell(6, 2, 'stepDefinitions.AddtoCart')
-data.setCell(6, 3, 138);
+data.setCell(6, 3, 221);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'placeOrder')
 data.setCell(7, 2, 'stepDefinitions.Checkout')
-data.setCell(7, 3, 120);
+data.setCell(7, 3, 200);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AddItemsToCartViaClick')
+data.setCell(8, 2, 'stepDefinitions.AddtoCart')
+data.setCell(8, 3, 168);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -361,34 +377,38 @@ return data;
               <div class="chronological-class-name">stepDefinitions.AddtoCart</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">reduceitemsOnCartToZero</span>
-                <span class="method-start">12752 ms</span>
+                <span class="method-start">34136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddItemsToCartViaClick</span>
-                <span class="method-start">12949 ms</span>
+                <span class="method-start">34417 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddItemsToCartviaInput</span>
-                <span class="method-start">13089 ms</span>
+                <span class="method-start">34588 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickAddToCart</span>
-                <span class="method-start">13290 ms</span>
+                <span class="method-start">34811 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">stepDefinitions.Checkout</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">proceedtoCheckOutPage</span>
-                <span class="method-start">13655 ms</span>
+                <span class="method-start">35360 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">placeOrder</span>
-                <span class="method-start">14486 ms</span>
+                <span class="method-start">36385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">acceptTermsAndConditions</span>
-                <span class="method-start">14607 ms</span>
+                <span class="method-name">acceptTermsAndConditionsNegative</span>
+                <span class="method-start">36588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">acceptTermsAndConditionsPositive</span>
+                <span class="method-start">38137 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -15,7 +15,7 @@ public class LoadHomePage {
 	
 			public static WebDriver driver = new ChromeDriver();
 			public static WebDriverWait wait = new WebDriverWait(driver, 5);
-			public String baseUrl= "https://rahulshettyacademy.com/seleniumPractise/#/";
+			public String baseUrl= dataAccess.ConfigData.getInstance().getBaseUrl();
 			
 //	@BeforeSuite(alwaysRun=true)
 //	public void beforeSuite() {

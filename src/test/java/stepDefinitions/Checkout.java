@@ -46,7 +46,23 @@ public class Checkout {
 	}
 	
 	@Test (priority=2)
-	public void acceptTermsAndConditions() throws Exception {
+	public void acceptTermsAndConditionsNegative() throws Exception {
+		WebElement placeorderBtn =	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(text(),'Choose Country')]")));
+		WebElement selectOption = driver.findElement(By.xpath("//select[1]"));
+		selectOption.click();
+		JavascriptExecutor je = (JavascriptExecutor) driver;
+    	WebElement country = driver.findElement(By.xpath("//option[contains(text(),'Kenya')]"));
+    	je.executeScript("arguments[0].scrollIntoView(true);",country);
+    	country.click();
+		WebElement proceed = driver.findElement(By.xpath("//button[contains(text(),'Proceed')]"));
+		proceed.click();
+		String sucessMsg = driver.findElement(By.xpath("//span[@class='errorAlert']//b")).getText();
+		System.out.println("this is the text ***  " +sucessMsg );
+		Assert.assertTrue(sucessMsg.contains("Please accept Terms & Conditions - Required"));
+	}
+	
+	@Test(priority=3)
+	public void acceptTermsAndConditionsPositive() throws InterruptedException {
 		WebElement placeorderBtn =	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(text(),'Choose Country')]")));
 		WebElement selectOption = driver.findElement(By.xpath("//select[1]"));
 		selectOption.click();
@@ -59,8 +75,8 @@ public class Checkout {
 		acceptCheckbox.click();
 		WebElement proceed = driver.findElement(By.xpath("//button[contains(text(),'Proceed')]"));
 		proceed.click();
-		String sucessMsg = driver.findElement(By.xpath("//div[@class='wrapperTwo']//span[1]//br")).getText();
+		String sucessMsg = driver.findElement(By.xpath("//div[@class='wrapperTwo']//span[1]")).getText();
 		System.out.println("this is the text ***  " +sucessMsg );
-//		Assert.assertEquals(pagename,"Choose Country");
+		Assert.assertTrue(sucessMsg.contains("Thank you, your order has been placed successfully"));
 	}
 }

@@ -7,9 +7,23 @@
         <methods>
           <include name="proceedtoCheckOutPage"/>
           <include name="placeOrder"/>
-          <include name="acceptTermsAndConditions"/>
+          <include name="acceptTermsAndConditionsPositive"/>
+          <include name="acceptTermsAndConditionsNegative"/>
         </methods>
       </class> <!-- stepDefinitions.Checkout -->
+      <class name="stepDefinitions.AddtoCart">
+        <methods>
+          <include name="AddItemsToCartViaClick"/>
+          <include name="reduceitemsOnCartToZero"/>
+          <include name="clickAddToCart"/>
+          <include name="AddItemsToCartviaInput"/>
+        </methods>
+      </class> <!-- stepDefinitions.AddtoCart -->
+      <class name="stepDefinitions.LoadHomePage">
+        <methods>
+          <include name="LoadBaseUrl"/>
+        </methods>
+      </class> <!-- stepDefinitions.LoadHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
